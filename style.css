@@ -1,0 +1,86 @@
+
+
+	body{
+	margin: 0;
+	padding: 0;
+	background: #silver;
+	}
+
+	li{
+		float: right;
+		padding: 10px;
+		background-color: silver;
+		margin: 3px;
+	}
+
+	ul{
+		list-style: none;
+		font-family: Helvetica, Arial;
+		font-size: 15px;
+	}
+
+	.header {
+
+	  padding: 140px;
+	  text-align: center;
+	  background: #353535;
+	  color: white;
+	  font-family: Helvetica, Arial;
+	  font-size: 60px;
+	  font-variant: small-caps;
+	
+
+	}
+
+
+	.loading {
+		font-family:Helvita, Arial;
+		background: #d6d6d6;
+		font-size: 30px;
+		margin: auto;
+
+
+	}
+
+	.marketing {
+		background: #474747;
+		font-family: Helvita, Arial;
+		font-size: 40px;
+		text-align: center;
+		padding: 40px;
+		color: white;
+		font-variant: small-caps;
+
+
+	}
+
+	.buttom{
+		text-decoration: none;
+		color: gray;
+		padding: 10px;
+		border-radius: 5px;
+		border: 2px solid gray;
+		font-size: 40px;
+
+	}
+
+
+	.buttom:hover{
+		background: gray;
+		color: white;
+
+
+	}
+
+	#titulo_home{
+		color: rgb(0,255,0);
+
+		
+
+	}
+
+
+	#texto_principal_home{
+		color: gray;
+	}
+
