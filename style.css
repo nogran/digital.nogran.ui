@@ -3,84 +3,66 @@
 	body{
 	margin: 0;
 	padding: 0;
-	background: #silver;
+	background-color: white;
 	}
 
-	li{
-		float: right;
-		padding: 10px;
-		background-color: silver;
-		margin: 3px;
+	h2{
+		font-family: Helvetica, Arial;
+		font-size: 40px;
+		text-align: center;
+		padding: 40px;
+		font-variant: small-caps;
 	}
 
 	ul{
-		list-style: none;
 		font-family: Helvetica, Arial;
-		font-size: 15px;
+		font-size: 20px;
+	}
+
+
+	li{
+		float: right;
+		padding: 20px;
+		margin: 1px;
 	}
 
 	.header {
-
-	  padding: 140px;
+	  padding: 70px;
 	  text-align: center;
 	  background: #353535;
 	  color: white;
 	  font-family: Helvetica, Arial;
-	  font-size: 60px;
+	  font-size: 35px;
 	  font-variant: small-caps;
-	
-
 	}
 
 
-	.loading {
-		font-family:Helvita, Arial;
-		background: #d6d6d6;
+	.servicos {
+		font-family:Helvetica, Arial;
 		font-size: 30px;
 		margin: auto;
-
-
 	}
 
-	.marketing {
+	.projetos {
 		background: #474747;
-		font-family: Helvita, Arial;
-		font-size: 40px;
-		text-align: center;
-		padding: 40px;
 		color: white;
-		font-variant: small-caps;
-
-
 	}
 
-	.buttom{
-		text-decoration: none;
-		color: gray;
-		padding: 10px;
-		border-radius: 5px;
-		border: 2px solid gray;
-		font-size: 40px;
-
-	}
-
-
-	.buttom:hover{
-		background: gray;
-		color: white;
-
-
-	}
-
-	#titulo_home{
-		color: rgb(0,255,0);
+	.sobre {
+		font-family:Helvetica, Arial;
 
 		
+	}
 
+	.contato {
+		font-family:Helvetica, Arial;
+		font-size: 30px;
+		margin: auto;
+		background: #353535;
+		color: white;
 	}
 
 
-	#texto_principal_home{
-		color: gray;
-	}
 
+
+}
