@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/statics/header/Header';
 import Navbar from './components/statics/navbar/Navbar';
 import Footer from './components/statics/footer/Footer';
@@ -23,12 +24,19 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <Navbar acao={ativaCor} />
-      <Swiper />
-      <Home />
-      <Footer />
-    </div>
+    <>
+      <Router>
+        <Navbar acao={ativaCor} />
+        <Swiper />
+        <Routes> // Antigo Switch
+
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+
+        </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 }
 
