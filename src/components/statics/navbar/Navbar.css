@@ -1,17 +1,16 @@
 .bg{
     background-color: transparent !important;
-    background-image: url('../../../assets/logo-nogran-white.png');
+    /* background-image: url('../../../assets/logo-nogran-white.png'); */
     background-size: 165px;
     background-repeat: no-repeat;
-    background-position: left center;
+    /* background-position: 50% center!important; */
 }
 
 .ativaCor{
     background-color: rgb(255, 255, 255)!important;
-    background-image: url('../../../assets/logo-nogran-black.png');
     background-size: 165px;
     background-repeat: no-repeat;
-    background-position: left center;
+    background-image: url('../../../assets/logo-nogran-black.png'); 
 }
 
 .acao{
@@ -28,6 +27,14 @@
 
 .bar{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 200px;
+}
+
+.logo img{
+    width: 150px;
 }
 

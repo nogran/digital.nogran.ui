@@ -1,0 +1,19 @@
+.upper{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+}
+
+.background {
+    background-color: #000000;
+}
+
+.downer {
+    background-color: #ffffff;
+}
+
+.contact {
+    font-size: 22px;
+    padding: 25px;
+    
+}

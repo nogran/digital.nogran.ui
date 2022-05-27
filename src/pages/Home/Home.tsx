@@ -6,7 +6,7 @@ function Home() {
     return (
         <Grid container direction="row" justifyContent='center' >
             <Grid item xs={12}>
-                <Box display='flex' p={30} style={{ height: '50vh' }}>
+                <Box display='flex' p={20} style={{ height: '50vh' }}>
                     <Box>
                         <Typography className='home2'>
                             Soluções
@@ -27,8 +27,21 @@ function Home() {
                         </Typography>
                     </Box>
                 </Box>
+                <Grid item xs={12}>
+                    <Box className="flex2" display='flex' p={20} style={{ height: '50vh' }}>
+
+
+                    </Box>
+                </Grid>
+
+                <Grid item xs={12}>
+                    <Box className="flex3" display='flex' p={20} style={{ height: '50vh' }}>
+
+
+                    </Box>
+                </Grid>
             </Grid>
-        </Grid>
+        </Grid >
     );
 }
 

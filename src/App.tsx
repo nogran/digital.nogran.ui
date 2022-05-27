@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Header from './components/statics/header/Header';
 import Navbar from './components/statics/navbar/Navbar';
 import Footer from './components/statics/footer/Footer';
 import Swiper from './pages/swiperReact/SwiperReact';

@@ -1,5 +1,5 @@
-import { AppBar, Box, Button, IconButton, Menu, MenuItem, Toolbar, Typography } from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
+import React from 'react';
+import { AppBar, Box, Toolbar, Typography } from '@material-ui/core';
 
 import './Navbar.css';
 
@@ -12,6 +12,9 @@ function Navbar({ acao }: { acao: any }) {
         <>
             <AppBar elevation={1} className={acao ? 'ativaCor' : 'bg'}>
                     <Toolbar style={toolbarStyle} className='bar'>
+                        <Box className='logo '> 
+                            <img src={require('../../../assets/logo-nogran-white.png')}/>
+                        </Box>
                         <Box display="flex" justifyContent='flex-end' className={acao ? 'acao' : 'acao2'}>
                             <Box mx={1}  p={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="subtitle1">
@@ -35,11 +38,9 @@ function Navbar({ acao }: { acao: any }) {
                             </Box>
                         </Box>
                     </Toolbar >
-                
             </AppBar >
- 
         </>
-    )
+    );
 }
 
 export default Navbar

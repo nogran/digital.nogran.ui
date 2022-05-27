@@ -1,6 +1,5 @@
-import React from 'react'
-import { AppBar, Box, Grid, IconButton, Toolbar, Typography } from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu';
+import React from 'react';
+import { Box, Button, Grid } from '@material-ui/core';
 
 import './Footer.css'
 
@@ -9,7 +8,17 @@ function Footer() {
         <>
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={12}>
-                    <Box style={{ backgroundColor: "#3F51B5", height: "120px" }}></Box>
+                    <Box className='upper' style={{ height: '12vh' }}>
+                        <Box className='contact'>
+                        Estamos à disposição para atendê-los.
+                            <Button variant="contained" color="primary">
+                                ENTRE EM CONTATO
+                            </Button>
+                        </Box>
+
+                    </Box>
+                    <Box className='background' style={{ height: '30vh' }}></Box>
+                    <Box className='downer' style={{ height: '8vh' }}></Box>
                 </Grid>
             </Grid>
         </>

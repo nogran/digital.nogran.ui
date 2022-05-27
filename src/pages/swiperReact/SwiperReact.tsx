@@ -5,17 +5,25 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-cube";
 
 import "./SwiperReact.css";
 
-// import required modules
-import { Navigation } from "swiper";
+// Import required modules
+import { EffectCube, Navigation, Pagination } from "swiper";
 import { Box, Typography } from "@material-ui/core";
 
 function SwiperReact() {
   return (
     <>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper" style={{ height: '90vh' }}>
+      <Swiper navigation={true} effect={"cube"} modules={[Navigation, EffectCube, Pagination]} className="mySwiper" style={{ height: '90vh' }}
+              cubeEffect={{
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+              }}>
         <SwiperSlide className="bg2">
           <Box p={25}>
             <Box display="flex" justifyContent="left" alignItems="center">

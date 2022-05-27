@@ -60,6 +60,7 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url('../../assets/images/home-pexels-photo-443383.jpg');
 }
+
 .bg3 {
     display: block;
     width: 100%;
@@ -77,4 +78,12 @@
     color: #ffffff !important;
     letter-spacing: 0 !important;
     line-height: 110% !important;
+}
+
+.swiper-button-prev {
+    color: white;
+}
+
+.swiper-button-next {
+    color: white;
 }
