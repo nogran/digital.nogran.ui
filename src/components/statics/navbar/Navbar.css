@@ -1,0 +1,30 @@
+.bg{
+    background-color: transparent !important;
+    background-image: url('../../../assets/logo-nogran-white.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+
+.ativaCor{
+    background-color: rgb(255, 255, 255)!important;
+    background-image: url('../../../assets/logo-nogran-black.png');
+    background-size: 200px;
+    background-repeat: no-repeat;
+}
+
+.acao{
+    font-weight: bold !important;
+    color: #000000;
+    margin-right: 25px !important;
+}
+.acao2{
+    font-weight: bold !important;
+    color: #ffffff;
+    margin-right: 25px !important;
+}
+
+.bar{
+    display: flex;
+    justify-content: end;
+}
+

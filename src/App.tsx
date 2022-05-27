@@ -1,15 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Navbar from './components/statics/navbar/Navbar';
+import Footer from './components/statics/footer/Footer';
 import Home from './pages/Home/Home';
-import Header from './pages/Header/Header';
 import './App.css';
 
 function App() {
+
+  const [ativaCor, setAtivaCor] = useState(false);
+
+  useEffect(function () {
+    function posicaoScroll() {
+      if (window.scrollY > 40) {
+        setAtivaCor(true);
+      } else {
+        setAtivaCor(false);
+      }
+    }
+
+    window.addEventListener('scroll', posicaoScroll);
+  }, []);
+
   return (
     <div>
-    <Home />
-    <Header />
+      <Navbar acao={ativaCor} />
+      <Home />
+      <Footer />
     </div>
-   );
+  );
 }
 
 export default App;

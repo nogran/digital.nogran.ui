@@ -1,41 +1,33 @@
 import React from 'react';
-import { Paper, Box, ButtonGroup, Button, Grid } from '@material-ui/core';
+import { Grid, Container, Box, Typography } from '@material-ui/core';
 import './Home.css';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        '& > *': {
-            margin: theme.spacing(1),
-        },
-    },
-}));
 
 function Home() {
-    const classes = useStyles();
-
     return (
-        <>
-            <Grid container>
-                <Grid item xs={3} >
-                    <Box p={2}>
-                        <img src={require('../../assets/logo-nogran-black.png')} alt="logo black" className="logo-black" />
+        <Grid container direction="row" justifyContent='center' >
+            <Grid item xs={12}>
+                <Box className='background' display='flex' style={{ height: '80vh' }}>
+                    <Box p={20}>
+                        <Box>
+                        <Typography className='home'>
+                            A era
+                        </Typography> 
+                        <Typography className='home'>
+                           exponencial:
+                        </Typography> 
+                        <Typography className='home'>
+                        cresça sem limites
+                        </Typography> 
                     </Box>
-                </Grid>
-                <Grid item xs={3}></Grid>
-                <Grid item xs={1}></Grid>
-                <Grid item xs={5}>
-                    <Box display="flex" justifyContent="center">
-                        <div className={classes.root}>
-                            <Button variant="outlined">Home</Button>
-                            <Button variant="outlined">Empresa</Button>
-                            <Button variant="outlined">Serviços</Button>
-                            <Button variant="outlined">Contato</Button>
-                        </div>
+                    </Box>
+                </Box>
+                <Grid container direction="row" xs={12} className='background2'>
+                    <Box display='flex' p={18} style={{ height: '20vh' }}>
+
                     </Box>
                 </Grid>
             </Grid>
-        </>
+        </Grid>
     );
 }
 
