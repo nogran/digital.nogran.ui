@@ -58,7 +58,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url('../../assets/images/home-pexels-photo-443383.jpeg');
+            rgba(0, 0, 0, 0.5)), url('../../assets/images/home-pexels-photo-443383.jpg');
+}
+.bg3 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('../../assets/images/pexels-thisisengineering-3861969.jpg');
 }
 
 .text {

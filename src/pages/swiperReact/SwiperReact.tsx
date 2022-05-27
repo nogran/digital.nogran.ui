@@ -36,7 +36,7 @@ function SwiperReact() {
           </Box></SwiperSlide>
 
         <SwiperSlide className="bg1"></SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide className="bg3"></SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
         <SwiperSlide>Slide 5</SwiperSlide>
       </Swiper>
