@@ -6,12 +6,12 @@ import './Footer.css'
 
 function Footer() {
     return (
-        <>oi
+        <>
             <Grid container direction="row" justifyContent="center" alignItems="center">
                 <Grid alignItems="center" item xs={12}>
                     <Box style={{ backgroundColor: "#3F51B5", height: "120px" }}></Box>
                 </Grid>
-            </Grid> 
+            </Grid>
         </>
     );
 }
