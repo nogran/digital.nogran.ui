@@ -4,6 +4,7 @@ import Header from './components/statics/header/Header';
 import Navbar from './components/statics/navbar/Navbar';
 import Footer from './components/statics/footer/Footer';
 import Swiper from './pages/swiperReact/SwiperReact';
+import Contato from './pages/contato/Contato';
 import Home from './pages/Home/Home';
 import './App.css';
 
@@ -28,12 +29,15 @@ function App() {
       <Router>
         <Navbar acao={ativaCor} />
         <Swiper />
+        <div style={{ minHeight: '100vh' }}>
         <Routes> // Antigo Switch
 
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/contato" element={<Contato />} />
 
         </Routes>
+        </div>
         <Footer />
       </Router>
     </>

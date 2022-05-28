@@ -1,6 +1,17 @@
 import React from 'react';
-import { Grid, Container, Box, Typography } from '@material-ui/core';
+import { Grid, Container, Box, Typography, withStyles, Button } from '@material-ui/core';
 import './Home.css';
+
+const StyledButton = withStyles({
+    root: {
+        backgroundColor: '#656565',
+        color: '#fff',
+        '&:hover': {
+            backgroundColor: 'black',
+            // color: 'black',
+        },
+    }
+})(Button);
 
 function Home() {
     return (
@@ -40,6 +51,15 @@ function Home() {
 
                     </Box>
                 </Grid>
+
+                <Box className='upper' style={{ height: '12vh' }}>
+                    <Box className='contact'>
+                        Estamos à disposição para atendê-los.
+                        <StyledButton variant="contained" style={{ fontWeight: 'bold' }}>
+                            ENTRE EM CONTATO
+                        </StyledButton>
+                    </Box>
+                </Box>
             </Grid>
         </Grid >
     );

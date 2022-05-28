@@ -26,3 +26,9 @@
 .flex3 {
     background-color: #ffffff;
 }
+
+.upper{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+}
