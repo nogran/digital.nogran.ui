@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay } from 'swiper';
 
 // Import Swiper styles
 import "swiper/css";
@@ -15,9 +16,10 @@ import { EffectCube, Navigation, Pagination } from "swiper";
 import { Box, Typography } from "@material-ui/core";
 
 function SwiperReact() {
+  SwiperCore.use([Autoplay])
   return (
     <>
-      <Swiper navigation={true} effect={"cube"} modules={[Navigation, EffectCube, Pagination]} className="mySwiper" style={{ height: '90vh' }}
+      <Swiper speed={1600} autoplay={{ delay: 5000 }} navigation={true} effect={"cube"} modules={[Navigation, EffectCube, Pagination]} className="mySwiper" style={{ height: '90vh' }}
               cubeEffect={{
                 shadow: true,
                 slideShadows: true,
@@ -45,8 +47,6 @@ function SwiperReact() {
 
         <SwiperSlide className="bg1"></SwiperSlide>
         <SwiperSlide className="bg3"></SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
       </Swiper>
     </>
   );
