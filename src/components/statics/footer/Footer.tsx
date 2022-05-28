@@ -1,7 +1,18 @@
 import React from 'react';
-import { Box, Button, Grid } from '@material-ui/core';
+import { Box, Button, Grid, withStyles } from '@material-ui/core';
 
 import './Footer.css'
+
+const StyledButton = withStyles({
+    root: {
+      backgroundColor: '#656565',
+      color: '#fff',
+      '&:hover': {
+        backgroundColor: 'black',
+        // color: 'black',
+    },
+  }})(Button);
+  
 
 function Footer() {
     return (
@@ -11,9 +22,9 @@ function Footer() {
                     <Box className='upper' style={{ height: '12vh' }}>
                         <Box className='contact'>
                         Estamos à disposição para atendê-los.
-                            <Button variant="contained" color="primary">
+                            <StyledButton variant="contained">
                                 ENTRE EM CONTATO
-                            </Button>
+                            </StyledButton>
                         </Box>
 
                     </Box>
