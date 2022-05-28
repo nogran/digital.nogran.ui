@@ -2,11 +2,16 @@
     background-color: #000000;
 }
 
-.downer {
-    background-color: #ffffff;
+/* .logo img {
+    size: 100px!important;
+} */
+
+.contato {
+    color: #ffffff;
+    margin-left: 200px;
 }
 
-.contact {
-    font-size: 22px;
-    padding: 25px;
+.downer {
+    background-color: #ffffff;
+    margin-left: 200px;
 }

@@ -1,40 +1,21 @@
-.bg{
-    background-color: transparent !important;
-    /* background-image: url('../../../assets/logo-nogran-white.png'); */
-    background-size: 165px;
-    background-repeat: no-repeat;
-    /* background-position: 50% center!important; */
-}
-
-.ativaCor{
-    background-color: rgb(255, 255, 255)!important;
-    background-size: 165px;
-    background-repeat: no-repeat;
-    background-image: url('../../../assets/logo-nogran-black.png'); 
-}
-
-.acao{
-
-    color: #000000;
-    margin-right: 125px !important;
-    
-}
-.acao2{
-    color: #ffffff;
-    margin-right: 125px !important;
-
-}
-
-.bar{
+.bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 
-.logo{
-    margin-left: 200px;
+.ativaCor {
+    color: #000000!important;
+    background-color: rgb(255, 255, 255) !important;
+    background-repeat: no-repeat;
+    background-image:url("../../../assets/logo-nogran-black.png");
+    background-size: 150px;
+    background-position: 150px center;
 }
 
-.logo img{
-    width: 150px;
+.desativaCor {
+    background-color: transparent !important;
+    background-repeat: no-repeat;
+    background-image:url("../../../assets/logo-nogran-white.png");
+    background-size: 150px;
+    background-position: 150px center;
 }
-

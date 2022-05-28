@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay } from 'swiper';
@@ -19,34 +19,37 @@ function SwiperReact() {
   SwiperCore.use([Autoplay])
   return (
     <>
-      <Swiper speed={1600} autoplay={{ delay: 5000 }} navigation={true} effect={"cube"} modules={[Navigation, EffectCube, Pagination]} className="mySwiper" style={{ height: '90vh' }}
-              cubeEffect={{
-                shadow: true,
-                slideShadows: true,
-                shadowOffset: 20,
-                shadowScale: 0.94,
-              }}>
+      <Swiper className="mySwiper" style={{ height: '90vh' }}
+        modules={[Navigation, Pagination, EffectCube]}
+        navigation={true}
+        effect={"cube"}
+        speed={1600}
+        autoplay={{ delay: 5000 }}
+
+        cubeEffect={{
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        }}>
+
         <SwiperSlide className="bg2">
           <Box p={25}>
             <Box display="flex" justifyContent="left" alignItems="center">
-              <Typography className='text'>
-                A era
-              </Typography>
+              <Typography className='text'>A era</Typography>
             </Box >
             <Box display="flex" justifyContent="left" alignItems="center">
-              <Typography className='text'>
-                exponencial:
-              </Typography>
+              <Typography className='text'>exponencial:</Typography>
             </Box>
             <Box display="flex" justifyContent="left" alignItems="center">
-              <Typography className='text'>
-                cresça sem limites
-              </Typography>
+              <Typography className='text'>cresça sem limites</Typography>
             </Box>
-          </Box></SwiperSlide>
+          </Box>
+        </SwiperSlide>
 
         <SwiperSlide className="bg1"></SwiperSlide>
         <SwiperSlide className="bg3"></SwiperSlide>
+
       </Swiper>
     </>
   );

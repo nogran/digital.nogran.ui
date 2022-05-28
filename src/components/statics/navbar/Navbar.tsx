@@ -10,31 +10,21 @@ const toolbarStyle = {
 function Navbar({ acao }: { acao: any }) {
     return (
         <>
-            <AppBar elevation={1} className={acao ? 'ativaCor' : 'bg'}>
+            <AppBar elevation={1} className={acao ? 'ativaCor' : 'desativaCor'}>
                     <Toolbar style={toolbarStyle} className='bar'>
-                        <Box className='logo '> 
-                            <img src={require('../../../assets/logo-nogran-white.png')}/>
-                        </Box>
-                        <Box display="flex" justifyContent='flex-end' className={acao ? 'acao' : 'acao2'}>
+                        <Box display="flex" marginRight={15}>
+                        {/* <img src={require('../../../assets/logo-nogran-black.png')}/> */}
                             <Box mx={1}  p={1} style={{ cursor: "pointer" }}>
-                                <Typography variant="subtitle1">
-                                    HOME
-                                </Typography>
+                                <Typography variant="subtitle1">HOME</Typography>
                             </Box>
                             <Box mx={1} p={1} style={{ cursor: "pointer" }}>
-                                <Typography variant="subtitle1">
-                                    EMPRESA
-                                </Typography>
+                                <Typography variant="subtitle1">EMPRESA</Typography>
                             </Box>
                             <Box mx={1} p={1} style={{ cursor: "pointer" }}>
-                                <Typography variant="subtitle1">
-                                    SERVIÇOS
-                                </Typography>
+                                <Typography variant="subtitle1">SERVIÇOS</Typography>
                             </Box>
-                            <Box mx={1}  p={1}style={{ cursor: "pointer" }}>
-                                <Typography variant="subtitle1">
-                                    CONTATO
-                                </Typography>
+                            <Box mx={1} p={1}style={{ cursor: "pointer" }}>
+                                <Typography variant="subtitle1">CONTATO</Typography>
                             </Box>
                         </Box>
                     </Toolbar >

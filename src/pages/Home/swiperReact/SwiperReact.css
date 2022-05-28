@@ -7,13 +7,11 @@
     color: #000;
     margin: 0;
     padding: 0;
-    speed: 600;
 }
 
 .swiper {
     width: 100%;
     height: 100%;
-    
 }
 
 .swiper-slide {
@@ -51,7 +49,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url('../../assets/images/home-pexels-fauxels-3184357.jpg');
+            rgba(0, 0, 0, 0.5)), url('../../../assets/images/home-pexels-fauxels-3184357.jpg');
 }
 
 .bg2 {
@@ -61,7 +59,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url('../../assets/images/home-pexels-photo-443383.jpg');
+            rgba(0, 0, 0, 0.5)), url('../../../assets/images/home-pexels-photo-443383.jpg');
 }
 
 .bg3 {
@@ -72,7 +70,7 @@
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url('../../assets/images/pexels-thisisengineering-3861969.jpg');
+            rgba(0, 0, 0, 0.5)), url('../../../assets/images/pexels-thisisengineering-3861969.jpg');
 }
 
 .text {

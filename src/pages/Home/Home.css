@@ -1,20 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
-
-.home {
-    font-size: 450% !important;
-    font-family: 'Roboto', sans-serif !important;
-    color: #ffffff !important;
-    letter-spacing: 0 !important;
-    line-height: 110% !important;
-}
-
-.home2 {
-    font-size: 50px !important;
-    font-family: 'Roboto', sans-serif !important;
-    color: #000000 !important;
-    letter-spacing: 0 !important;
-}
-
 .background2 {
     background-color: #ffffff;
 }
@@ -24,11 +7,16 @@
 }
 
 .flex3 {
+    background-color: #a4a0a0;
+}
+
+.upper-line {
     background-color: #ffffff;
 }
 
-.upper{
-    background-color: #ebebeb;
-    display: flex;
-    justify-content: center;
+.folder {
+    background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("../../assets/images/business-pexels-photo-7691709.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
 }

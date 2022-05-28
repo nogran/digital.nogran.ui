@@ -17,7 +17,6 @@ function Contato() {
             </Grid>
             <Grid xs={6}>
 
-
             </Grid>
         </Grid>
     );
