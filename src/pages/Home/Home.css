@@ -6,10 +6,6 @@
     background-color: #747474;
 }
 
-.flex3 {
-    background-color: #a4a0a0;
-}
-
 .upper-line {
     background-color: #ffffff;
 }
@@ -19,4 +15,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 40%;
+}
+
+.folder2 {
+    background-color: #000000;
+}
+
+.alinhar{
+    align-items: "baseline";
 }

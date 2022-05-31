@@ -1,14 +1,3 @@
-.mySwiper {
-    position: relative;
-    height: 100%;
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-}
-
 .swiper {
     width: 100%;
     height: 100%;
@@ -16,9 +5,10 @@
 
 .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    background: #fff;
-
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -35,56 +25,27 @@
     align-items: center;
 }
 
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.bg1 {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url('../../../assets/images/home-pexels-fauxels-3184357.jpg');
-}
-
-.bg2 {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url('../../../assets/images/home-pexels-photo-443383.jpg');
-}
-
-.bg3 {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url('../../../assets/images/pexels-thisisengineering-3861969.jpg');
-}
-
-.text {
-    font-size: 450% !important;
-    font-family: 'Roboto', sans-serif !important;
-    color: #ffffff !important;
-    letter-spacing: 0 !important;
-    line-height: 110% !important;
-}
-
+/* Arrow Navigation */
 .swiper-button-prev {
     color: white;
 }
 
 .swiper-button-next {
     color: white;
+}
+
+/* Background Image */
+.bg1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('../../../assets/images/home-pexels-photo-443383.jpg');
+}
+
+.bg2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('../../../assets/images/home-pexels-fauxels-3184357.jpg');
+}
+
+.bg3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url('../../../assets/images/pexels-thisisengineering-3861969.jpg');
 }

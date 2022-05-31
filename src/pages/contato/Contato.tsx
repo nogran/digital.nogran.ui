@@ -11,7 +11,6 @@ function Contato() {
                         <TextField id='nome' label='nome' variant='outlined' name='nome' margin='normal' fullWidth/>
                         <TextField id='telefone' label='telefone' variant='outlined' name='telefone' margin='normal' fullWidth/>
                         <TextField id='email' label='email' variant='outlined' name='email' margin='normal' fullWidth/>
-                        
                     </form>
                 </Box>
             </Grid>

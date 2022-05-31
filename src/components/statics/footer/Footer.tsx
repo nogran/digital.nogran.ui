@@ -10,8 +10,8 @@ function Footer() {
                 <Grid item alignItems="center" className='background'  xs={6}>
 
                     <Box display='flex' alignItems="center" style={{ height: '25vh' }}>
-                        <Box className='logo'>
-                            <img src={require('../../../assets/logo-nogran-white.png')} />
+                        <Box className='logo' marginLeft='200px'>
+                            <img width="50%" src={require('../../../assets/logo/logo-nogran-white.png')} />
                         </Box>
                     </Box>
                 </Grid>
