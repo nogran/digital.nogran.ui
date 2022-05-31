@@ -48,7 +48,7 @@ function Home() {
                 <Grid item xs={6}>
                     <Box>
                         <Box marginBottom='40px'>
-                            <Typography variant='h4' style={{ fontWeight: 'bold' }}>Produto Ideal</Typography>
+                            <Typography variant='h3'>Produto Ideal</Typography>
                         </Box>
 
                         <Box className='alinhar' display='flex' marginBottom='5px'>
