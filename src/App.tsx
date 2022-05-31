@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/statics/header/Header';
 import Navbar from './components/statics/navbar/Navbar';
 import Footer from './components/statics/footer/Footer';
 import Contato from './pages/contato/Contato';
 import Home from './pages/Home/Home';
-import './App.css';
 
-function App() {
+export const App = () => {
 
   const [ativaCor, setAtivaCor] = useState(false);
 
@@ -40,5 +39,3 @@ function App() {
     </>
   );
 }
-
-export default App;
