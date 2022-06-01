@@ -30,6 +30,8 @@ export const App = () => {
           <Routes> // Antigo Switch
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
+            {/* <Route path="/empresa" element={<Contato />} />
+            <Route path="/servicos" element={<Contato />} /> */}
             <Route path="/contato" element={<Contato />} />
           </Routes>
         </div>

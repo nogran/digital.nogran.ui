@@ -33,25 +33,32 @@ function SwiperReact() {
         }}>
         <SwiperSlide className="bg1">
           <Box>
-            <Typography variant="h1">A era exponencial:</Typography>
-            <Typography variant="h2">cresça sem limites</Typography>
-          </Box>
-        </SwiperSlide>
-
-        <SwiperSlide className="bg2">
-          <Box>
-            <Typography variant="h1">A era exponencial:</Typography>
-            <Typography variant="h2">cresça sem limites</Typography>
+            <Typography variant="h2">Somos a Digital Nogran</Typography>
+            <Typography variant="h5">Aqui transformamos o seu problema em resultados</Typography>
           </Box>
         </SwiperSlide>
 
         <SwiperSlide className="bg3">
           <Box>
-            <Typography variant="h1">A era exponencial:</Typography>
-            <Typography variant="h2">cresça sem limites</Typography>
+            <Typography variant="h2">Inovação é Futuro do seu Negócio</Typography>
+            <Typography variant="h5">Reinvente sua empresa e explore o futuro em Desenvolvimento de Software</Typography>
           </Box>
-
         </SwiperSlide>
+
+        <SwiperSlide className="bg2">
+          <Box>
+            <Typography variant="h2">Equipe Antenada e Plugada</Typography>
+            <Typography variant="h5">Especializada em dar suporte aos seus Processos de Negócio e Serviços de Tecnologia</Typography>
+          </Box>
+        </SwiperSlide>
+
+        <SwiperSlide className="bg4">
+          <Box>
+            <Typography variant="h2">Produtos Inovadores</Typography>
+            <Typography variant="h5">Era exponencial: faça parte e cresça sem limites</Typography>
+          </Box>
+        </SwiperSlide>
+
       </Swiper>
 
     </>
