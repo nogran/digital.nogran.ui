@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Swiper from './swiperReact/SwiperReact';
-import { Grid, Box, Typography, withStyles, Button } from '@material-ui/core';
+import { Grid, Box, Typography, withStyles, Button, Card, CardContent } from '@material-ui/core';
 import './Home.css';
 import Navbar from '../../components/statics/navbar/Navbar';
+import { Link } from 'react-router-dom';
 
 const StyledButton = withStyles({
     root: {
@@ -34,7 +35,7 @@ export const Home = () => {
 
     return (
         <>
-        <Navbar acao={ativaCor} />
+            <Navbar acao={ativaCor} />
             <Swiper />
             <Grid container direction="row" justifyContent="center" alignItems="center">
 
@@ -127,32 +128,30 @@ export const Home = () => {
                             <img width="8%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" />
                             <img width="8%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="" />
                         </Box>
-
-                        <Box>
-                            <Typography variant='h5' align='center'>A Nogran faz com que as tecnologias mais modernas e estáveis do mercado cheguem para seus clientes,</Typography>
-                            <Typography variant='h5' align='center'>implementando soluções atuais para problemas antigos.</Typography>
-                        </Box>
+                        <Typography variant='h5' align='center'>A Nogran faz com que as tecnologias mais modernas e estáveis do mercado cheguem para seus clientes,</Typography>
+                        <Typography variant='h5' align='center'>implementando soluções atuais para problemas antigos.</Typography>
                     </Box>
                 </Grid>
 
                 {/* PAGE 4 */}
-                <Grid item xs={12} style={{ height: '70vh' }}>
-                    <Box className='folder'>
-                        <Box className='folder' padding={25}>
-                            <Typography variant='h5'>Gostamos de desafios! Portanto,</Typography>
-                            <Typography variant='h5'>seja qual for sua demanda, entre</Typography>
-                            <Typography variant='h5'>em contato e converse com nossa</Typography>
-                            <Typography variant='h5'>equipe.</Typography>
+                <Grid item xs={12} alignItems="center">
+                    <CardContent className='folder' style={{ height: '50vh' }} >
+                        <Box margin={5} >
+                            <Typography align='center' variant='h2'>Gostamos de desafios!</Typography>
+                            <Typography align='center' variant='h4'>Portanto, seja qual for sua demanda,</Typography>
+                            <Typography align='center' variant='h4'>entre em contato e converse com</Typography>
+                            <Typography align='center' variant='h4'>nossa equipe.</Typography>
                         </Box>
-                    </Box>
-                </Grid>
 
-                <Grid item xs={12} style={{ height: '8vh' }}>
-                    <Box className='upper-line' display='flex' alignItems="center" justifyContent="center" >
+                    </CardContent>
+
+                    <Box margin={3} className='upper-line' display='flex' alignItems="center" justifyContent="center" >
                         <Typography align="center" variant='h5'>Estamos à disposição para atendê-los.</Typography>
-                        <Box marginLeft={4}>
-                            <StyledButton variant="contained" style={{ fontWeight: 'bold' }}>ENTRE EM CONTATO</StyledButton>
-                        </Box>
+                        <Link to='/contato' className='text-decorator-none'>
+                            <Box marginLeft={4}>
+                                <StyledButton variant="contained" style={{ fontWeight: 'bold' }}>ENTRE EM CONTATO</StyledButton>
+                            </Box>
+                        </Link>
                     </Box>
                 </Grid>
             </Grid>

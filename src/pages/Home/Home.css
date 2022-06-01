@@ -12,9 +12,11 @@
 
 .folder {
     background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("../../assets/images/business-pexels-photo-7691709.jpeg");
+    background-attachment: fixed;
+    background-position: start;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 40%;
+    flex-wrap: wrap;
 }
 
 .folder2 {
@@ -25,4 +27,8 @@
 
 .alinhar{
     align-items: "baseline";
+}
+
+.text-decorator-none{
+    text-decoration: none;
 }
