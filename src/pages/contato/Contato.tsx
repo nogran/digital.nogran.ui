@@ -16,6 +16,7 @@ export const Contato = () => {
       }
     }
     window.addEventListener('scroll', posicaoScroll);
+    window.scrollTo(0, 0)
   }, []);
 
   return (

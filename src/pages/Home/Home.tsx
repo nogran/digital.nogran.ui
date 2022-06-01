@@ -28,6 +28,7 @@ export const Home = () => {
             }
         }
         window.addEventListener('scroll', posicaoScroll);
+        window.scrollTo(0, 0)
     }, []);
 
 
