@@ -20,9 +20,11 @@ function Navbar({ acao }: { acao: any }) {
                             </Box>
                         </Link>
 
-                        <Box mx={1} p={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="subtitle1">EMPRESA</Typography>
-                        </Box>
+                        <Link to='/empresa' className='text-decorator-none'>
+                            <Box mx={1} p={1} style={{ cursor: "pointer", color: "black" }}>
+                                <Typography variant="subtitle1">EMPRESA</Typography>
+                            </Box>
+                        </Link>
 
                         <Box mx={1} p={1} style={{ cursor: "pointer" }}>
                             <Typography variant="subtitle1">SERVIÇOS</Typography>
