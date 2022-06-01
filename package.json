@@ -1,6 +1,6 @@
 {
   "name": "nogran-site",
-  "homepage": "https://digitalnogran.com.br/",
+  "homepage": "http://digitalnogran.com.br/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

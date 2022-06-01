@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Swiper from './swiperReact/SwiperReact';
 import { Grid, Box, Typography, withStyles, Button } from '@material-ui/core';
 import './Home.css';
+import Navbar from '../../components/statics/navbar/Navbar';
 
 const StyledButton = withStyles({
     root: {
@@ -14,9 +15,25 @@ const StyledButton = withStyles({
     }
 })(Button);
 
-function Home() {
+export const Home = () => {
+
+    const [ativaCor, setAtivaCor] = useState(false);
+
+    useEffect(function () {
+        function posicaoScroll() {
+            if (window.scrollY > 40) {
+                setAtivaCor(true);
+            } else {
+                setAtivaCor(false);
+            }
+        }
+        window.addEventListener('scroll', posicaoScroll);
+    }, []);
+
+
     return (
         <>
+        <Navbar acao={ativaCor} />
             <Swiper />
             <Grid container direction="row" justifyContent="center" alignItems="center">
 
@@ -141,5 +158,3 @@ function Home() {
         </>
     );
 }
-
-export default Home
