@@ -36,7 +36,7 @@ export const Servicos = () => {
 
             <Grid container direction="row" justifyContent='center' alignItems='center'>
 
-                <Grid item className="contatoimg" xs={12}>
+                <Grid item className="servicoimg" xs={12}>
                     <Box style={{ height: '40vh' }} display='flex' alignItems='center' justifyContent='start' marginLeft={20}>
                         <Typography variant='h4' style={{ fontWeight: 'bold', color: 'white' }}>SERVIÇOS</Typography>
                     </Box>
