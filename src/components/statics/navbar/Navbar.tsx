@@ -6,6 +6,11 @@ const toolbarStyle = {
     minHeight: '80px',
 };
 
+const linkStyle = {
+    textDecoration: "none",
+    color: 'white'
+};
+
 function Navbar({ acao }: { acao: any }) {
     return (
         <>
@@ -14,24 +19,26 @@ function Navbar({ acao }: { acao: any }) {
                     <Box display="flex" marginRight={15}>
                         {/* <img src={require('../../../assets/logo-nogran-black.png')}/> */}
 
-                        <Link to='/home' className='text-decorator-none'>
-                            <Box mx={1} p={1} style={{ cursor: "pointer", color: "white" }}>
+                        <Link to='/home' style={linkStyle} className={acao ? 'ativaCor' : 'desativaCor'}>
+                            <Box mx={1} p={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="subtitle1">HOME</Typography>
                             </Box>
                         </Link>
 
-                        <Link to='/empresa' className='text-decorator-none'>
-                            <Box mx={1} p={1} style={{ cursor: "pointer", color: "black" }}>
+                        <Link to='/empresa' style={linkStyle} className={acao ? 'ativaCor' : 'desativaCor'}>
+                            <Box mx={1} p={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="subtitle1">EMPRESA</Typography>
                             </Box>
                         </Link>
 
-                        <Box mx={1} p={1} style={{ cursor: "pointer" }}>
-                            <Typography variant="subtitle1">SERVIÇOS</Typography>
-                        </Box>
+                        <Link to='/servicos' style={linkStyle} className={acao ? 'ativaCor' : 'desativaCor'}>
+                            <Box mx={1} p={1} style={{ cursor: "pointer" }}>
+                                <Typography variant="subtitle1">SERVIÇOS</Typography>
+                            </Box>
+                        </Link>
 
-                        <Link to='/contato' className='text-decorator-none'>
-                            <Box mx={1} p={1} style={{ cursor: "pointer", color: "black" }}>
+                        <Link to='/contato' style={linkStyle} className={acao ? 'ativaCor' : 'desativaCor'}>
+                            <Box mx={1} p={1} style={{ cursor: "pointer" }}>
                                 <Typography variant="subtitle1">CONTATO</Typography>
                             </Box>
                         </Link>
