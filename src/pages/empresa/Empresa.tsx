@@ -77,7 +77,7 @@ export const Empresa = () => {
                 <Grid item xs={12} style={{ height: '30vh', marginTop:'20px' }}>
                     <Typography variant='h3' align="center">Olhar para o Futuro.</Typography>
                     <Box>
-                        <Typography variant='h6' align='center' style={{ marginLeft: '170px', marginRight: '170px', marginTop: '10px' }}>Somos uma empresa formada por profissionais com vasta experiência nas áreas de tecnologia, desenvolvimento de software e produção industrial. Isso possibilita a visão ao futuro onde desenvolvemos as soluções digitais específicas que serão as ferramentas de trabalho para possibilitar a criação de uma nova jornada para nossos clientes.</Typography>
+                        <Typography variant='h6' align='center' style={{ marginLeft: '170px', marginRight: '170px', marginTop: '10px' }}>Nossa equipe é formada por profissionais com vasta experiência nas áreas de tecnologia, desenvolvimento de software e produção industrial. Isso possibilita a visão ao futuro onde desenvolvemos as soluções digitais específicas que serão as ferramentas de trabalho para possibilitar a criação de uma nova jornada para nossos clientes.</Typography>
                     </Box>
                 </Grid>
 
@@ -101,8 +101,8 @@ export const Empresa = () => {
                     <Typography variant='h6' style={{ marginRight: '170px', marginTop: '10px' }}>Somos uma empresa formada por profissionais com vasta experiência nas áreas de tecnologia.</Typography>
                 </Grid>
 
-                <Grid item xs={12} className="missao" style={{ height: '10vh' }}>
-                    <Box margin={3} className='upper-line' display='flex' alignItems="center" justifyContent="center" >
+                <Grid item xs={12} className='upper-line2' style={{ height: '10vh' }}>
+                    <Box margin={3} display='flex' alignItems="center" justifyContent="center" >
                         <Typography align="center" variant='h6'>Conheça nossos serviços e saiba mais sobre nosso trabalho.</Typography>
                         <Link to='/servicos' className='text-decorator-none'>
                             <Box marginLeft={4}>
