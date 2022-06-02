@@ -134,14 +134,13 @@ export const Home = () => {
 
                 {/* PAGE 4 */}
                 <Grid item xs={12} alignItems="center">
-                    <CardContent className='folder' style={{ height: '50vh' }} >
+                    <CardContent className='folder' style={{ height: '45vh' }} >
                         <Box margin={5} >
                             <Typography align='center' variant='h3'>Gostamos de desafios!</Typography>
                             <Typography align='center' variant='h5'>Portanto, seja qual for sua demanda,</Typography>
                             <Typography align='center' variant='h5'>entre em contato e converse com</Typography>
                             <Typography align='center' variant='h5'>nossa equipe.</Typography>
                         </Box>
-
                     </CardContent>
 
                     <Box margin={3} className='upper-line' display='flex' alignItems="center" justifyContent="center" >
