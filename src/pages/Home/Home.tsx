@@ -143,8 +143,10 @@ export const Home = () => {
                             <Typography align='center' variant='h5'>nossa equipe.</Typography>
                         </Box>
                     </CardContent>
+                </Grid>
 
-                    <Box margin={3} className='upper-line' display='flex' alignItems="center" justifyContent="center" >
+                <Grid item xs={12} className='upper-line' style={{ height: '10vh' }}>
+                    <Box margin={3} display='flex' alignItems="center" justifyContent="center" >
                         <Typography align="center" variant='h6'>Estamos à disposição para atendê-los.</Typography>
                         <Link to='/contato' className='text-decorator-none'>
                             <Box marginLeft={4}>
