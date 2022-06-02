@@ -42,9 +42,10 @@ export const Empresa = () => {
             <Grid container direction="row" justifyContent='center' alignItems='center' >
 
                 {/* PAGE 1 */}
-                <Grid item className="empresa2" xs={4} style={{ height: '40vh' }}>
-                </Grid>
-                <Grid item className="empresa2" xs={8} style={{ height: '40vh' }} >
+                <Grid item className="empresa2" xs={12}>
+                    <Box style={{ height: '40vh' }} display='flex' alignItems='center' justifyContent='start' marginLeft={20}>
+                        <Typography variant='h4' style={{ fontWeight: 'bold', color: 'white' }}>EMPRESA</Typography>
+                    </Box>
                 </Grid>
 
                 <Grid item xs={6} style={{ height: '50vh' }} >
@@ -74,7 +75,7 @@ export const Empresa = () => {
                 </Grid>
 
                 {/* PAGE 3 */}
-                <Grid item xs={12} style={{ height: '30vh', marginTop:'20px' }}>
+                <Grid item xs={12} style={{ height: '30vh', marginTop: '20px' }}>
                     <Typography variant='h3' align="center">Olhar para o Futuro.</Typography>
                     <Box>
                         <Typography variant='h6' align='center' style={{ marginLeft: '170px', marginRight: '170px', marginTop: '10px' }}>Nossa equipe é formada por profissionais com vasta experiência nas áreas de tecnologia, desenvolvimento de software e produção industrial. Isso possibilita a visão ao futuro onde desenvolvemos as soluções digitais específicas que serão as ferramentas de trabalho para possibilitar a criação de uma nova jornada para nossos clientes.</Typography>
