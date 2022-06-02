@@ -15,7 +15,7 @@ const linkStyle = {
 function Navbar({ acao }: { acao: any }) {
     return (
         <>
-            <AppBar elevation={0} className={acao ? 'ativaCor' : 'desativaCor'}>
+            <AppBar elevation={1} className={acao ? 'ativaCor' : 'desativaCor'}>
                 <Toolbar style={toolbarStyle} className='bar'>
                     <Box display="flex" marginRight={15}>
                         {/* <img src={require('../../../assets/logo-nogran-black.png')}/> */}
