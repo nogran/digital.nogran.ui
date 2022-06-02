@@ -1,6 +1,6 @@
 .empresa1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url("../../assets/images/pexels-photo-3184639.jpg");
+    rgba(0, 0, 0, 0.5)), url("../../assets/images/pexels-pixabay-210158.jpg");
     background-attachment: fixed;
     background-position: start;
     background-repeat: no-repeat;
@@ -9,9 +9,13 @@
 
 .empresa2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url("../../assets/images/home-pexels-photo-443383.jpg");
+    rgba(0, 0, 0, 0.5)), url("../../assets/images/pexels-negative-space-48606.jpg");
     background-attachment: fixed;
     background-position: start;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.missao{
+    background-color: rgba(234, 234, 234, 0.377);
 }
