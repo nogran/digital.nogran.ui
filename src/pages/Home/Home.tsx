@@ -49,8 +49,8 @@ export const Home = () => {
                 </Grid>
 
                 <Grid item style={{ height: '60vh' }} xs={6} alignItems='center'>
-                    <Box sx={{ p: 20 }} display='flex' justifyContent='center' alignItems='center'>
-                        <img width="80%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="" />
+                    <Box sx={{ p: 15 }} display='flex' justifyContent='center' alignItems='center' className='box-shadow'>
+                        <img width="80%" src={require("../../assets/logo/pc.png")} alt="" />
                     </Box>
                 </Grid>
 
@@ -100,15 +100,16 @@ export const Home = () => {
                 {/* PAGE 3 */}
                 <Grid item xs={6} alignItems="center" style={{ height: '40vh' }}>
                     <Box paddingLeft={20} marginTop={10}>
-                        <Typography variant='h4'>Nosso Diferencial</Typography>
-                        <Typography variant='h6'>Nossa equipe é especializada em diagnosticar a sua necessidade e desenvolver a melhor solução para o seu negócio. Trabalhamos com grandes empresas até startups, sempre entregando aplicações web robustas para Sistemas Customizados.</Typography>
+                        <Typography variant='h4'>Nosso</Typography>
+                        <Typography variant='h4'>Diferencial</Typography>
+                        <Typography variant='h6'>Ótimo atendimento e prioridade na solução dos problemas do cliente. Utilizamos metodologias ágeis para trabalhar por etapas de desenvolvimento e fracionamento de entregas. Isso permite o acompanhamento de todas as etapas do projeto e também, são evitados eventuais problemas que podem ser corrigidos mais rapidamente. Pensamos em cada detalhe da sua empresa para ultrapassarmos as expectativas ao concluir o projeto.</Typography>
                     </Box>
 
                 </Grid>
 
                 <Grid item xs={6} alignItems='center' style={{ height: '40vh' }}>
-                    <Box display='flex' justifyContent='center' alignItems='center' marginTop={10}>
-                        <img width="40%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="" />
+                    <Box display='flex' justifyContent='center' alignItems='center' marginTop={10} marginRight={10} className='nosso'>
+                        <img width="50%" src={require("../../assets/logo/nosso.png")} alt="" />
                     </Box>
                 </Grid>
 
