@@ -4,7 +4,8 @@ import './Navbar.css';
 
 const toolbarStyle = {
     minHeight: '80px',
-};
+    borderBottom: '1px solid rgba(255,255,255, 0.3)',
+}
 
 const linkStyle = {
     textDecoration: "none",
@@ -14,7 +15,7 @@ const linkStyle = {
 function Navbar({ acao }: { acao: any }) {
     return (
         <>
-            <AppBar elevation={1} className={acao ? 'ativaCor' : 'desativaCor'}>
+            <AppBar elevation={0} className={acao ? 'ativaCor' : 'desativaCor'}>
                 <Toolbar style={toolbarStyle} className='bar'>
                     <Box display="flex" marginRight={15}>
                         {/* <img src={require('../../../assets/logo-nogran-black.png')}/> */}
