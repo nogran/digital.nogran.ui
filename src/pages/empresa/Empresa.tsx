@@ -1,13 +1,12 @@
-
 import { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Pagination, Autoplay, Navigation } from "swiper";
 import { Box, Button, Grid, TextField, Typography, withStyles } from "@material-ui/core";
+import { Link } from "react-router-dom";
+import Navbar from "../../components/statics/navbar/Navbar";
 import './Empresa.css';
 import "swiper/css";
 import "swiper/css/pagination";
-import Navbar from "../../components/statics/navbar/Navbar";
-import { Link } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Pagination, Autoplay, Navigation } from "swiper";
 
 const StyledButton = withStyles({
     root: {
@@ -60,10 +59,16 @@ export const Empresa = () => {
 
                 <Grid item xs={6}>
                     <Box padding={10}>
-                        <Swiper className="mySwiper" loop={true} modules={[Pagination, Navigation]} style={{ height: '60vh' }}
+                        
+                        <Swiper
+                            className="mySwiper"
+                            loop={true}
+                            modules={[Pagination, Navigation]}
+                            style={{ height: '60vh' }}
                             speed={1600}
                             autoplay={{ delay: 3500 }}
-                            pagination={true}>
+                            pagination={true}
+                        >
 
                             <SwiperSlide className="bgEmpresa1"></SwiperSlide>
                             <SwiperSlide className="bgEmpresa2"></SwiperSlide>
