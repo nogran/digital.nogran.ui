@@ -23,7 +23,7 @@ export const Contato = () => {
     e.preventDefault()
 
     await postsemtoken(`/contato`, usuario, setUsuario)
-    // await postsemtoken(`/sendMail`, email, setEmail)
+    await postsemtoken(`/sendMail`, email, setEmail)
     
     alert('Mensagem enviada com sucesso.')
   };
@@ -35,12 +35,12 @@ export const Contato = () => {
     })
   }
 
-  // function updatedModel(e: ChangeEvent<HTMLInputElement>) {
-  //   setEmail({
-  //     ...email,
-  //     [e.target.name]: e.target.value
-  //   })
-  // }
+  function updatedEmail(e: ChangeEvent<HTMLInputElement>) {
+    setEmail({
+      ...email,
+      [e.target.name]: e.target.value
+    })
+  }
 
   const [usuario, setUsuario] = useState<Usuario>(
     {
@@ -55,7 +55,7 @@ export const Contato = () => {
     {
       recipient: 'mateusnog95@gmail.com',
       subject: 'Contato Digital',
-      msgBody: '',
+      msgBody: usuario.nome + usuario.telefone,
       attachment: ''
     })
 
@@ -93,9 +93,10 @@ export const Contato = () => {
               </Box>
 
               <TextField value={usuario.mensagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="mensagem" label="Mensagem" variant="outlined" name="mensagem" margin="normal" fullWidth required rows={10} multiline />
+              
+              {/* <TextField value={email.msgBody} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedEmail(e)} id="msgBody" label="Mensagem" variant="outlined" name="msgBody" margin="normal" fullWidth required /> */}
 
-              {/* <TextField value={email.msgBody} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="msgBody" label="Mensagem" variant="outlined" name="msgBody" margin="normal" fullWidth required /> */}
-
+              
               <Box marginTop={2} textAlign='center'>
                 <StyledButton type='submit' variant='contained' color='primary'>
                   Enviar
