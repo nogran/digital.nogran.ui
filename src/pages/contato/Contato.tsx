@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 import { Box, Button, Grid, TextField, Typography, withStyles } from "@material-ui/core";
 import './Contato.css';
 import Navbar from "../../components/statics/navbar/Navbar";
+import Usuario from "../../models/Usuario";
+import { postsemtoken } from "../../services/Service";
 
 const StyledButton = withStyles({
   root: {
@@ -16,6 +18,29 @@ const StyledButton = withStyles({
 
 export const Contato = () => {
 
+  async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
+    e.preventDefault()
+    
+    await postsemtoken(`/contato`, usuario, setUsuario)
+    alert('🌱 Mensagem enviada com sucesso.')
+  };
+  
+  function updatedModel(e: ChangeEvent<HTMLInputElement>) {
+    setUsuario({
+        ...usuario,
+        [e.target.name]: e.target.value
+    })
+  }
+
+  const [usuario, setUsuario] = useState<Usuario>(
+    {
+      id: 0,
+      nome: '',
+      telefone: '',
+      email: '',
+      mensagem: ''
+    })
+  
   const [ativaCor, setAtivaCor] = useState(true);
 
   useEffect(function () {
@@ -42,13 +67,13 @@ export const Contato = () => {
 
         <Grid item xs={7} alignItems='center'>
           <Box marginLeft={20} >
-            <form>
+            <form onSubmit={onSubmit}>
               <Box display='flex' justifyContent='space-between' alignItems='center' marginTop={5}>
-                <TextField id='nome' label='nome' variant='outlined' name='nome' margin='normal' />
-                <TextField id='telefone' label='telefone' variant='outlined' name='telefone' margin='normal' />
-                <TextField id='email' label='email' variant='outlined' name='email' margin='normal' />
+              <TextField value={usuario.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="nome" label="nome" variant="outlined" name="nome" margin="normal" fullWidth required />
+              <TextField value={usuario.telefone} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="telefone" label="telefone" variant="outlined" name="telefone" margin="normal" fullWidth required />
+              <TextField value={usuario.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="email" label="email" variant="outlined" name="email" margin="normal" fullWidth required />
               </Box>
-              <TextField id='mensagem' label='mensagem' variant='outlined' name='mensagem' margin='normal' fullWidth rows={10} multiline />
+              <TextField value={usuario.mensagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="mensagem" label="mensagem" variant="outlined" name="mensagem" margin="normal" fullWidth required rows={10} multiline />
               <Box marginTop={2} textAlign='center'>
                 <StyledButton type='submit' variant='contained' color='primary'>
                   Enviar
