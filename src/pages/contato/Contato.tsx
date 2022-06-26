@@ -24,22 +24,23 @@ export const Contato = () => {
 
     // await postsemtoken(`/contato`, usuario, setUsuario)
     await postsemtoken(`/sendMail`, email, setEmail)
-    alert('🌱 Mensagem enviada com sucesso.')
+    
+    alert('Mensagem enviada com sucesso.')
   };
 
-  // function updatedModel(e: ChangeEvent<HTMLInputElement>) {
-  //   setUsuario({
-  //     ...usuario,
-  //     [e.target.name]: e.target.value
-  //   })
-  // }
-
   function updatedModel(e: ChangeEvent<HTMLInputElement>) {
-    setEmail({
-      ...email,
+    setUsuario({
+      ...usuario,
       [e.target.name]: e.target.value
     })
   }
+
+  // function updatedModel(e: ChangeEvent<HTMLInputElement>) {
+  //   setEmail({
+  //     ...email,
+  //     [e.target.name]: e.target.value
+  //   })
+  // }
 
   const [usuario, setUsuario] = useState<Usuario>(
     {
@@ -53,8 +54,8 @@ export const Contato = () => {
   const [email, setEmail] = useState<Email>(
     {
       recipient: 'mateusnog95@gmail.com',
-      msgBody: '',
       subject: 'Contato Digital',
+      msgBody: '',
       attachment: ''
     })
 
