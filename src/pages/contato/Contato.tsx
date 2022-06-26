@@ -3,6 +3,7 @@ import { Box, Button, Grid, TextField, Typography, withStyles } from "@material-
 import './Contato.css';
 import Navbar from "../../components/statics/navbar/Navbar";
 import Usuario from "../../models/Usuario";
+import Email from "../../models/Email";
 import { postsemtoken } from "../../services/Service";
 
 const StyledButton = withStyles({
@@ -20,15 +21,23 @@ export const Contato = () => {
 
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault()
-    
-    await postsemtoken(`/contato`, usuario, setUsuario)
+
+    // await postsemtoken(`/contato`, usuario, setUsuario)
+    await postsemtoken(`/sendMail`, email, setEmail)
     alert('🌱 Mensagem enviada com sucesso.')
   };
-  
+
+  // function updatedModel(e: ChangeEvent<HTMLInputElement>) {
+  //   setUsuario({
+  //     ...usuario,
+  //     [e.target.name]: e.target.value
+  //   })
+  // }
+
   function updatedModel(e: ChangeEvent<HTMLInputElement>) {
-    setUsuario({
-        ...usuario,
-        [e.target.name]: e.target.value
+    setEmail({
+      ...email,
+      [e.target.name]: e.target.value
     })
   }
 
@@ -40,7 +49,15 @@ export const Contato = () => {
       email: '',
       mensagem: ''
     })
-  
+
+  const [email, setEmail] = useState<Email>(
+    {
+      recipient: 'mateusnog95@gmail.com',
+      msgBody: '',
+      subject: 'Contato Digital',
+      attachment: ''
+    })
+
   const [ativaCor, setAtivaCor] = useState(true);
 
   useEffect(function () {
@@ -69,11 +86,15 @@ export const Contato = () => {
           <Box marginLeft={20} >
             <form onSubmit={onSubmit}>
               <Box display='flex' justifyContent='space-between' alignItems='center' marginTop={5}>
-              <TextField value={usuario.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="nome" label="nome" variant="outlined" name="nome" margin="normal" fullWidth required />
-              <TextField value={usuario.telefone} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="telefone" label="telefone" variant="outlined" name="telefone" margin="normal" fullWidth required />
-              <TextField value={usuario.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="email" label="email" variant="outlined" name="email" margin="normal" fullWidth required />
+                <TextField value={usuario.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="nome" label="Nome" variant="outlined" name="nome" margin="normal" fullWidth required />
+                <TextField value={usuario.telefone} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="telefone" label="Telefone" variant="outlined" name="telefone" margin="normal" fullWidth required />
+                <TextField value={usuario.email} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="email" label="E-mail" variant="outlined" name="email" margin="normal" fullWidth required />
               </Box>
-              <TextField value={usuario.mensagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="mensagem" label="mensagem" variant="outlined" name="mensagem" margin="normal" fullWidth required rows={10} multiline />
+
+              <TextField value={usuario.mensagem} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="mensagem" label="Mensagem" variant="outlined" name="mensagem" margin="normal" fullWidth required rows={10} multiline />
+
+              {/* <TextField value={email.msgBody} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id="msgBody" label="Mensagem" variant="outlined" name="msgBody" margin="normal" fullWidth required /> */}
+
               <Box marginTop={2} textAlign='center'>
                 <StyledButton type='submit' variant='contained' color='primary'>
                   Enviar
