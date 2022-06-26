@@ -22,8 +22,8 @@ export const Contato = () => {
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault()
 
-    // await postsemtoken(`/contato`, usuario, setUsuario)
-    await postsemtoken(`/sendMail`, email, setEmail)
+    await postsemtoken(`/contato`, usuario, setUsuario)
+    // await postsemtoken(`/sendMail`, email, setEmail)
     
     alert('Mensagem enviada com sucesso.')
   };
