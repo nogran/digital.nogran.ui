@@ -43,8 +43,9 @@ export const Home = () => {
                 <Grid item xs={6} style={{ height: '60vh' }} alignItems="center">
                     <Box paddingLeft={20} paddingY={20}>
                         <Typography variant='h4'>Soluções</Typography>
-                        <Typography variant='h4'>Tecnológicas</Typography>
-                        <Typography variant='h6'>Nossa equipe é especializada em diagnosticar a sua necessidade e desenvolver a melhor solução para o seu negócio. Trabalhamos com grandes empresas até startups, sempre entregando aplicações web robustas para Sistemas Customizados.</Typography>
+                        <Typography variant='h4' style={{marginBottom: "15px"}}>Tecnológicas</Typography>
+                        <Typography variant='h6'style={{marginBottom: "10px"}} >Nossa equipe é especializada em diagnosticar a sua necessidade e desenvolver a melhor solução para o seu negócio. </Typography>
+                        <Typography variant='h6'>Trabalhamos com grandes empresas até startups, sempre entregando aplicações web robustas.</Typography>
                     </Box>
                 </Grid>
 
@@ -98,16 +99,18 @@ export const Home = () => {
                 </Grid>
 
                 {/* PAGE 3 */}
-                <Grid item xs={6} alignItems="center" style={{ height: '40vh' }}>
+                <Grid item xs={6} style={{ height: '40vh' }}>
+
+                    <Box display="flex"></Box>
+              
                     <Box paddingLeft={20} marginTop={10}>
                         <Typography variant='h4'>Nosso</Typography>
-                        <Typography variant='h4'>Diferencial</Typography>
-                        <Typography variant='h6'>Ótimo atendimento e prioridade na solução dos problemas do cliente. Utilizamos metodologias ágeis para trabalhar por etapas de desenvolvimento e fracionamento de entregas. Isso permite o acompanhamento de todas as etapas do projeto e também, são evitados eventuais problemas que podem ser corrigidos mais rapidamente. Pensamos em cada detalhe da sua empresa para ultrapassarmos as expectativas ao concluir o projeto.</Typography>
+                        <Typography variant='h4' style={{marginBottom: "15px"}}>Diferencial</Typography>
+                        <Typography variant='h6' style={{marginBottom: "10px"}}>Ótimo atendimento e prioridade na solução dos problemas do cliente.</Typography>
+                        <Typography variant='h6'style={{marginBottom: "10px"}}>Utilizamos metodologias ágeis para trabalhar por etapas de desenvolvimento e fracionamento de entregas. Isso permite o acompanhamento de todas as etapas do projeto e também, são evitados eventuais problemas que podem ser corrigidos mais rapidamente.</Typography>
+                        <Typography variant='h6'>Pensamos em cada detalhe da sua empresa para ultrapassarmos as expectativas ao concluir o projeto.</Typography>
                     </Box>
-
-                </Grid>
-
-                <Grid item xs={6} alignItems='center' style={{ height: '40vh' }}>
+              
                     <Box display='flex' justifyContent='center' alignItems='center' marginTop={10} marginRight={10} className='nosso'>
                         <img width="50%" src={require("../../assets/logo/nosso.png")} alt="" />
                     </Box>
@@ -124,8 +127,8 @@ export const Home = () => {
                             <img width="8%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original-wordmark.svg" alt="" />
                             <img width="8%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="" />
                             <img width="8%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="" />
-                            <img width="8%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="" />
                             <img width="8%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="" />
+                            <img width="8%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="" />
                             <img width="8%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" />
                             <img width="8%" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="" />
                         </Box>
