@@ -18,6 +18,7 @@ export const App = () => {
             <Route path="/empresa" element={<Empresa />} />
             <Route path="/servicos" element={<Servicos />} />
             <Route path="/contato" element={<Contato />} />
+            <Route path="/sendMail" element={<Contato />} />
           </Routes>
         </div>
 
