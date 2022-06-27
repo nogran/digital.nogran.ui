@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export const api = axios.create({
-    baseURL: 'http://localhost:8080/'
+    baseURL: 'https://nogran-site.herokuapp.com/'
 })
 
 export const busca = async (url:any, setDados:any, header:any)=>{
