@@ -5,6 +5,7 @@ import Navbar from "../../components/statics/navbar/Navbar";
 import Usuario from "../../models/Usuario";
 import Email from "../../models/Email";
 import { postsemtoken } from "../../services/Service";
+import { toast } from "react-toastify";
 
 const StyledButton = withStyles({
   root: {
@@ -25,7 +26,16 @@ export const Contato = () => {
     await postsemtoken(`/contato`, usuario, setUsuario)
     await postsemtoken(`/sendMail`, email, setEmail)
     
-    alert('Mensagem enviada com sucesso.')
+    toast.success('Mensagem enviada com sucesso!', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark"
+  });
   };
 
   function updatedModel(e: ChangeEvent<HTMLInputElement>) {
@@ -54,7 +64,7 @@ export const Contato = () => {
   const [email, setEmail] = useState<Email>(
     {
       recipient: 'mateusnog95@gmail.com',
-      subject: 'Contato Digital',
+      subject: 'Contato Nogran',
       msgBody: usuario.nome + usuario.telefone,
       attachment: ''
     })
