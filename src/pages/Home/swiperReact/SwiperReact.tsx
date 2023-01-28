@@ -34,21 +34,21 @@ function SwiperReact() {
         <SwiperSlide className="bg1">
           <Box>
             <Typography variant="h2">Somos a Digital Nogran</Typography>
-            <Typography variant="h5">Aqui transformamos o seu problema em resultados</Typography>
+            <Typography variant="h5">Transformamos seus desafios em resultados eficazes</Typography>
           </Box>
         </SwiperSlide>
 
         <SwiperSlide className="bg3">
           <Box>
-            <Typography variant="h2">Inovação é Futuro do seu Negócio</Typography>
-            <Typography variant="h5">Reinvente sua empresa e explore o futuro em Desenvolvimento de Software</Typography>
+            <Typography variant="h2">Inovação</Typography>
+            <Typography variant="h5">Reinvente sua empresa com o Desenvolvimento de Software avançado</Typography>
           </Box>
         </SwiperSlide>
 
         <SwiperSlide className="bg2">
           <Box>
-            <Typography variant="h2">Equipe Antenada e Plugada</Typography>
-            <Typography variant="h5">Especializada em dar suporte aos seus Processos de Negócio e Serviços de Tecnologia</Typography>
+            <Typography variant="h2">Equipe</Typography>
+            <Typography variant="h5">Está sempre atualizada e oferece os melhores e mais eficientes serviços</Typography>
           </Box>
         </SwiperSlide>
 

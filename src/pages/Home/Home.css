@@ -1,38 +1,55 @@
 .background2 {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .flex2 {
-    background-color: #747474;
+  background-color: #747474;
 }
 
 .upper-line {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .folder {
-    background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("../../assets/images/business-pexels-photo-7691709.jpeg");
-    background-attachment: fixed;
-    background-position: start;
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex-wrap: wrap;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../../assets/images/business-pexels-photo-7691709.jpeg");
+  background-attachment: fixed;
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-wrap: wrap;
 }
 
 .folder2 {
-    background-color: #aca4a4;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: #aca4a4;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.alinhar{
-    align-items: "baseline";
+.alinhar {
+  align-items: "baseline";
 }
 
-.text-decorator-none{
-    text-decoration: none;
+.text-decorator-none {
+  text-decoration: none;
 }
 
-.nosso img{
-    opacity: 0.6;
+.hands img {
+  opacity: 0.6;
+  width: 40%;
 }
+
+.tech_icon img {
+  width: 8%;
+}
+
+.pc img {
+  width: 60%;
+}
+
+/* .logo_vertical img {
+  width: 40%;
+} */

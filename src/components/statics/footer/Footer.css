@@ -1,17 +1,15 @@
 .background {
-    background-color: #000000;
+  background-color: #000000;
 }
 
-/* .logo img {
-    size: 100px!important;
-} */
-
 .contato {
-    color: #ffffff;
-    margin-left: 200px;
+  color: #ffffff;
 }
 
 .downer {
-    background-color: #ffffff;
-    margin-left: 200px;
+  background-color: #ffffff;
+}
+
+.logo_footer img {
+  width: 60%;
 }

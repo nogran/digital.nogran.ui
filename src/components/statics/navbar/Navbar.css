@@ -6,16 +6,10 @@
 .ativaCor {
     color: #000000!important;
     background-color: rgb(255, 255, 255) !important;
-    background-repeat: no-repeat;
-    background-image:url("../../../assets/logo/logo-nogran-black.png");
-    background-size: 150px;
-    background-position: 150px center;
+    /* background-image:url("../../../assets/logo/logo-nogran-black.png"); */
 }
 
 .desativaCor {
     background-color: transparent !important;
-    background-repeat: no-repeat;
-    background-image:url("../../../assets/logo/logo-nogran-white.png");
-    background-size: 150px;
-    background-position: 150px center;
+    /* background-image:url("../../../assets/logo/logo-nogran-white.png"); */
 }

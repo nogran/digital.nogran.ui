@@ -1,45 +1,59 @@
-.empresa1 {
+/* .empresa1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url("../../assets/images/pexels-pixabay-210158.jpg");
     background-attachment: fixed;
     background-position: start;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
+
+.empresa1 {
+    display: flex;
+    flex-wrap: wrap;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/images/pexels-pixabay-210158.jpg");
+    background-attachment: fixed;
+  }
+  
+  @media (min-width: 600px) {
+    .empresa1 {
+      flex-wrap: nowrap;
+    }
+  }
 
 .empresa2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("../../assets/images/pexels-negative-space-48606.jpg");
-    background-attachment: fixed;
-    background-position: start;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/images/pexels-negative-space-48606.jpg");
+  background-attachment: fixed;
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .missao {
-    background-color: rgba(234, 234, 234, 0.377);
+  background-color: rgba(234, 234, 234, 0.377);
 }
 
 .bgEmpresa1 {
-    background-image: url('../../assets/images/pexels-fauxels-3184338.jpg');
-    display: flex;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-top: 10px;
+  background-image: url("../../assets/images/pexels-fauxels-3184338.jpg");
+  display: flex;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 10px;
 }
 
 .bgEmpresa2 {
-        background-image: url('../../assets/images/pexels-fauxels-3183181.jpg');
-        display: flex;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-top: 10px;
+  background-image: url("../../assets/images/pexels-fauxels-3183181.jpg");
+  display: flex;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 10px;
 }
 
 .upper-line2 {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
