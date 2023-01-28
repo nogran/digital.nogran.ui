@@ -77,20 +77,6 @@ export const Home = () => {
         </Grid>
       </Grid>
 
-      {/* PAGE 2 */}
-      {/* <Grid item xs={12} sm={6} lg={6} alignItems="center">
-        <Box
-          sx={{ p: 15 }}
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          className="logo_vertical"
-          paddingLeft={20} paddingY={20}
-        >
-          <img src={require("../../assets/logo/logo-nogran-vertical.png")} />
-        </Box>
-      </Grid> */}
-
       <Grid container>
         <Grid item xs={12} sm={4} lg={6}>
           <Box
@@ -137,43 +123,44 @@ export const Home = () => {
       </Grid>
 
       {/* PAGE 3 */}
-      <Grid item xs={12} sm={6} lg={6} alignItems="center">
-        <Box paddingLeft={10} paddingRight={10} paddingY={10}>
-          <Typography variant="h4">Nosso</Typography>
-          <Typography variant="h4" style={{ marginBottom: "10px" }}>
-            Diferencial
-          </Typography>
-          <Typography variant="h6">
-            Nossa equipe oferece ótimo atendimento, utiliza metodologias ágeis
-            para dividir o projeto em etapas e entregar incrementos frequentes,
-            buscando superar as expectativas do cliente.
-          </Typography>
-        </Box>
-      </Grid>
+      <Grid container spacing={1}>
+        <Grid item xs={12} sm={6} lg={6} alignItems="center">
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            className="logo_vertical"
+          >
+            <img
+              src={require("../../assets/logo/logo-nogran-vertical.png")}
+              alt="Logo"
+            />
+          </Box>
+        </Grid>
 
-      <Grid item xs={12} sm={6} lg={6} alignItems="center">
-        <Box
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          marginTop={10}
-          marginRight={10}
-          className="hands"
-        >
-          <img src={require("../../assets/logo/nosso.png")} />
-        </Box>
+        <Grid item xs={12} sm={6} lg={4} alignItems="center">
+          <Box>
+            <Typography variant="h4">Nosso</Typography>
+            <Typography variant="h4">Diferencial</Typography>
+            <Typography variant="h6">
+              Nossa equipe oferece ótimo atendimento, utiliza metodologias ágeis
+              para dividir o projeto em etapas e entregar incrementos
+              frequentes, buscando superar as expectativas do cliente.
+            </Typography>
+          </Box>
+        </Grid>
       </Grid>
 
       {/* PAGE 4 */}
       <Grid item xs={12} alignItems="center">
-        <Box justifyContent="center" alignItems="center">
+        <Box justifyContent="center" alignItems="center" display="flex">
           <Typography variant="h4" align="center">
             Tecnologias que utilizamos
           </Typography>
         </Box>
 
         <Box
-        marginTop={5}
+          marginTop={5}
           marginBottom={12}
           display="flex"
           justifyContent="space-between"

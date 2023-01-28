@@ -37,11 +37,6 @@
   text-decoration: none;
 }
 
-.hands img {
-  opacity: 0.6;
-  width: 40%;
-}
-
 .tech_icon img {
   width: 8%;
 }
@@ -50,6 +45,6 @@
   width: 60%;
 }
 
-/* .logo_vertical img {
-  width: 40%;
-} */
+.logo_vertical img {
+  width: 35%;
+}
