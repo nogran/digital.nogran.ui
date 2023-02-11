@@ -1,4 +1,4 @@
-# 🌐 Digital Nogran
+# Digital Nogran UI
 API para Site Corporativo, consumo em React.
 https://digitalnogran.com.br/
 
