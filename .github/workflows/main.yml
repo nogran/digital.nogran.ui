@@ -15,6 +15,7 @@ jobs:
       
     - name: build
       run: |
+        CI=false
         npm install yarn
         yarn build
     
