@@ -6,21 +6,25 @@ on:
       - dev
 
 jobs:
-  build-and-deploy:
+  web-deploy:
+    name: deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
-        with:
-          node-version: '14.x'
-
-      - name: Install dependencies
-        run: yarn
-
-      - name: Build the app
-        run: yarn build
-        
+    - name: get latest code
+      uses: actions/checkout@v3
+      
+    - name: build
+      run: |
+        npm install
+        npm install yarn
+        yarn build
+    
+    - name: sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      with:
+        server: ${{ secrets.ftp_server }}
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
+        exclude: |
+          **/.git*
+          **/.git*/**
