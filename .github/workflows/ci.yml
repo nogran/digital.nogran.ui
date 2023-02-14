@@ -20,7 +20,7 @@ jobs:
       
     - name: build
       run: |
-        yarn build
+        yarn install
     
     - name: sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
