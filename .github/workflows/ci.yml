@@ -15,7 +15,8 @@ jobs:
       
     - name: build
       run: |
-        npm install
+        npm install yarn
+        yarn build
     
     - name: sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
