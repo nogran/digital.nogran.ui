@@ -13,9 +13,13 @@ jobs:
     - name: get latest code
       uses: actions/checkout@v3
       
+    - name: Use Node.js 16
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+      
     - name: build
       run: |
-        npm install
         yarn build
     
     - name: sync files
